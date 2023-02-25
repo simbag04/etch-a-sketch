@@ -27,19 +27,18 @@ function addPixelHandlers()
     pixels = document.querySelectorAll(".pixel");
     pixels.forEach((pixel) => {
         pixel.addEventListener('mouseover', () => {
+            let color = null;
             if (options.value == 'rainbow')
             {
-                let color = randomRGB();
-                pixel.style['background-color'] = color;
-                pixel.style['border-color'] = color;
-                pixel.style['border-size'] = '1px';
+                color = randomRGB();
             }
             else
             {
-                pixel.style['background-color'] = customColor.value;
-                pixel.style['border-color'] = customColor.value;
-                pixel.style['border-size'] = '1px';
+                color = customColor.value;
             }
+            pixel.style['background-color'] = color;
+            pixel.style['border-color'] = color;
+            pixel.style['border-size'] = '1px';
         });
     });
 
