@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <div class="title">Etch-A-Sketch</div>
+    <div class="body">
+        <div class="options">
+            <div class="new-grid option">
+                <div class="subtitle">Pick a Grid Size!</div>
+                <div class="grid">
+                    <input class="slider" value='32' type="range" min="16" max="100">
+                    <div class="slider-value">32</div> 
+                </div>
+                <button class="new-grid btn">Create New Grid</button>
+            </div>
+
+            <div class="new-color option">
+                <div class="subtitle">Pick a Pen Color!</div>
+                <div class="custom">
+                    Special Options:
+                    <select class="special-options btn">
+                        <option value="rainbow">Rainbow</option>
+                        <option value="custom-color">Custom Color!</option>
+                    </select>
+                    Pick any Color:
+                    <input class="color-picker" type="color">
+                </div>
+            </div>
+
+            <button class="clear btn">Clear All</button>
+        </div>
+
+        <div class="container"></div>
+    </div>
+
+
+    
+</body>
+</html>
