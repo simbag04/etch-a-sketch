@@ -1,75 +1,50 @@
+/* GENERAL PAGE LAYOUT SECTION */
+
+/* FLEX SECTION */
+.title, .body, .options, .option, .grid-slider, .custom, .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options, .option, .custom, .container
+{
+    flex-direction: column;
+}
+
+/* OTHER LAYOUT OPTIONS SECTION */
 body
 {
     margin: 0;
     background-color: #D5DCF9;
 }
+
 .title
 {
-    display: flex;
     padding: 32px;
     font-size: 32px;
-    justify-content: center;
-    align-items: center;
     background-color: #A7B0CA;
 
 }
+
 .body
 {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 24px 200px;
 }
 
+/* OPTIONS SECTION */
 .options
 {
     background-color: #8edce6;
     padding: 32px;
-}
-
-
-.container
-{
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-    width: 700px;
-    justify-content: center;
-    align-items: center;
-    margin: 32px;
-    flex-basis: 0;
-    background-color: white;
-    border: 2px solid black;
-
-}
-
-.row-container
-{
-    display: flex;
-    flex: 1;
-    width: 700px;
-}
-
-.pixel
-{
-    flex: 1;
-    border: 1px solid gainsboro;
-}
-
-.options
-{
-    display: flex;
-    flex-direction: column;
     gap: 40px;
 }
 
 .option
 {
-    display: flex;
-    flex-direction: column;
     gap: 15px;
-    justify-content: center;
-    align-items: center;
 }
 
 .subtitle
@@ -86,7 +61,8 @@ body
     font-size: 20px;
 }
 
-.grid
+/* SLIDER SECTION */
+.grid-slider
 {
     display: flex;
     gap: 8px;
@@ -105,13 +81,43 @@ body
     font-size: 18px;
 }
 
+/* CUSTOM COLOR SECTION */
 .custom
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 12px;
     font-size: 24px;
 }
+
+.color-picker
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* GRID CONTAINER SECTION */
+.container
+{
+    height: 700px;
+    width: 700px;
+    margin: 32px;
+    flex-basis: 0;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.row-container
+{
+    display: flex;
+    flex: 1;
+    width: 700px;
+}
+
+.pixel
+{
+    flex: 1;
+}
+
+
+
+
 
